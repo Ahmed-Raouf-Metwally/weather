@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.logo {
+    height: 10vh;
+}
+
+.Nav {
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+.nav-link {
+    padding-bottom: 10px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.nav-link:hover {
+    color: whitesmoke;
+    text-decoration: underline wavy 2px;
+}
+
+.active {
+    text-decoration: teal underline wavy 2px;
+}
+
+.svg {
+    transform: translatey(-10px);
+    -webkit-transform: translatey(-10px);
+    -moz-transform: translatey(-10px);
+    -ms-transform: translatey(-10px);
+    -o-transform: translatey(-10px);
+}
+
+.Nav a {
+    color: #fff;
+    text-decoration: non;
+}
+
+.Nav li {
+    padding-left: 40px;
+}
+
+.Home img {
+    position: relative;
+    z-index: 5;
+    margin-top: -35%;
+    width: 85%;
+}
+
+.home-cap {
+    margin-top: -5%;
+}
+
+.home-cap h2 {
+    color: #37aec3;
+}
+
+.card i {
+    font-size: 2rem;
+}
+
+.card {
+    color: #BFC1C8;
+    margin-top: 5PX;
+    border-radius: 15PX;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+    -webkit-border-radius: 15PX;
+    -moz-border-radius: 15PX;
+    -ms-border-radius: 15PX;
+    -o-border-radius: 15PX;
+}
+
+.cardHead {
+    background-color: #455a64;
+    padding: 7px;
+    border-start-end-radius: 15px;
+    border-start-start-radius: 15px;
+}
+
+.card-body {
+    background-color: #3199AB;
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+}
+
+.card-body h1 {
+    font-size: px;
+}
+
+.card-body p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-body2 p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#details {
+    color: #455F6E;
+}
+
+.card-body small {
+    color: #455F6E;
+}
+
+.card-body2 small {
+    color: #455F6E;
+}
+
+.cardHead2 {
+    background-color: #455a64;
+    padding: 7px;
+    border-start-end-radius: 15px;
+    border-start-start-radius: 15px;
+}
+
+.card-body2 {
+    background-color: #83bbc4;
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+}
+
+span {
+    color: #fff;
+}
+.btn{
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 10px 15px !important;
+    transition: all 0.3s;
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+.btn:hover{
+    background-color: transparent;
+    border-color: #17a2b8;
+    color: #17a2b8;
+}
+.footer{
+    background-color: #374850;
+}
+@media only screen and (max-width: 1024px) {
+    .Home img {
+        margin-top: -15%;
+    }
+    .home-cap {
+        margin-top: 0%;
+    }
+    .cardHead {
+        padding: 7px;
+    }
+    .card-body {
+        height: auto;
+    }
+    .card-body h1 {
+        font-size: 50px;
+    }
+    .card-body p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .card-body2 p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .cardHead2 {
+        padding: 7px;
+    }
+    .card-body2 {
+        height: 15rem;
+        width: auto;
+    }
+    .card i {
+        font-size: 1.5rem;
+    }
+    span h4 {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Login Template">
+    <meta name="keywords" content=" Login,Template,loginTemplate">
+    <meta name="author" content="Eng/Ahmed Raouf">
+    <title>Weather App</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class=" ">
+        <nav class="Nav navbar navbar-expand-lg ">
+            <div class="container">
+                <img src="imgs/logo.png" class="img-fluid logo" alt="">
+                <a class="navbar-brand" href="#">Weather</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#search">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#app">Mobile App
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#Subscribe">Subscribe</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <div class="svg">
+            <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg"
+                class="transition duration-300 ease-in-out delay-150">
+                <style>
+                    .path-0 {
+                        animation: pathAnim-0 4s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                    }
+
+                    @keyframes pathAnim-0 {
+                        0% {
+                            d: path("M 0,400 C 0,400 0,133 0,133 C 105.89285714285714,155.10714285714286 211.78571428571428,177.21428571428572 313,171 C 414.2142857142857,164.78571428571428 510.75,130.24999999999997 653,129 C 795.25,127.75000000000003 983.2142857142858,159.7857142857143 1122,166 C 1260.7857142857142,172.2142857142857 1350.392857142857,152.60714285714283 1440,133 C 1440,133 1440,400 1440,400 Z");
+                        }
+
+                        25% {
+                            d: path("M 0,400 C 0,400 0,133 0,133 C 134.25,139.64285714285714 268.5,146.28571428571428 392,146 C 515.5,145.71428571428572 628.25,138.50000000000003 730,138 C 831.75,137.49999999999997 922.5,143.7142857142857 1039,144 C 1155.5,144.2857142857143 1297.75,138.64285714285717 1440,133 C 1440,133 1440,400 1440,400 Z");
+                        }
+
+                        50% {
+                            d: path("M 0,400 C 0,400 0,133 0,133 C 161.53571428571428,132.5 323.07142857142856,132 422,147 C 520.9285714285714,162 557.2500000000001,192.5 674,179 C 790.7499999999999,165.5 987.9285714285713,108 1129,93 C 1270.0714285714287,78 1355.0357142857142,105.5 1440,133 C 1440,133 1440,400 1440,400 Z");
+                        }
+
+                        75% {
+                            d: path("M 0,400 C 0,400 0,133 0,133 C 121.64285714285714,155.82142857142856 243.28571428571428,178.64285714285714 377,166 C 510.7142857142857,153.35714285714286 656.4999999999999,105.25 770,87 C 883.5000000000001,68.75 964.7142857142858,80.35714285714286 1071,93 C 1177.2857142857142,105.64285714285714 1308.642857142857,119.32142857142857 1440,133 C 1440,133 1440,400 1440,400 Z");
+                        }
+
+                        100% {
+                            d: path("M 0,400 C 0,400 0,133 0,133 C 105.89285714285714,155.10714285714286 211.78571428571428,177.21428571428572 313,171 C 414.2142857142857,164.78571428571428 510.75,130.24999999999997 653,129 C 795.25,127.75000000000003 983.2142857142858,159.7857142857143 1122,166 C 1260.7857142857142,172.2142857142857 1350.392857142857,152.60714285714283 1440,133 C 1440,133 1440,400 1440,400 Z");
+                        }
+                    }
+                </style>
+                <path
+                    d="M 0,400 C 0,400 0,133 0,133 C 105.89285714285714,155.10714285714286 211.78571428571428,177.21428571428572 313,171 C 414.2142857142857,164.78571428571428 510.75,130.24999999999997 653,129 C 795.25,127.75000000000003 983.2142857142858,159.7857142857143 1122,166 C 1260.7857142857142,172.2142857142857 1350.392857142857,152.60714285714283 1440,133 C 1440,133 1440,400 1440,400 Z"
+                    stroke="none" stroke-width="0" fill="#37aec388"
+                    class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)">
+                </path>
+                <style>
+                    .path-1 {
+                        animation: pathAnim-1 9s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                    }
+
+                    @keyframes pathAnim-1 {
+                        0% {
+                            d: path("M 0,400 C 0,400 0,266 0,266 C 121.39285714285714,259.42857142857144 242.78571428571428,252.85714285714286 356,244 C 469.2142857142857,235.14285714285714 574.25,224 697,235 C 819.75,246 960.2142857142858,279.14285714285717 1087,288 C 1213.7857142857142,296.85714285714283 1326.892857142857,281.42857142857144 1440,266 C 1440,266 1440,400 1440,400 Z");
+                        }
+
+                        25% {
+                            d: path("M 0,400 C 0,400 0,266 0,266 C 145.5,275.5 291,285 395,281 C 499,277 561.5,259.5 664,267 C 766.5,274.5 909,307 1045,311 C 1181,315 1310.5,290.5 1440,266 C 1440,266 1440,400 1440,400 Z");
+                        }
+
+                        50% {
+                            d: path("M 0,400 C 0,400 0,266 0,266 C 106.35714285714286,283.6428571428571 212.71428571428572,301.2857142857143 347,300 C 481.2857142857143,298.7142857142857 643.4999999999999,278.5 782,282 C 920.5000000000001,285.5 1035.2857142857142,312.7142857142857 1141,314 C 1246.7142857142858,315.2857142857143 1343.357142857143,290.6428571428571 1440,266 C 1440,266 1440,400 1440,400 Z");
+                        }
+
+                        75% {
+                            d: path("M 0,400 C 0,400 0,266 0,266 C 126.42857142857144,259.1428571428571 252.8571428571429,252.28571428571428 384,256 C 515.1428571428571,259.7142857142857 651.0000000000001,273.99999999999994 767,280 C 882.9999999999999,286.00000000000006 979.1428571428571,283.7142857142857 1088,280 C 1196.857142857143,276.2857142857143 1318.4285714285716,271.1428571428571 1440,266 C 1440,266 1440,400 1440,400 Z");
+                        }
+
+                        100% {
+                            d: path("M 0,400 C 0,400 0,266 0,266 C 121.39285714285714,259.42857142857144 242.78571428571428,252.85714285714286 356,244 C 469.2142857142857,235.14285714285714 574.25,224 697,235 C 819.75,246 960.2142857142858,279.14285714285717 1087,288 C 1213.7857142857142,296.85714285714283 1326.892857142857,281.42857142857144 1440,266 C 1440,266 1440,400 1440,400 Z");
+                        }
+                    }
+                </style>
+                <path
+                    d="M 0,400 C 0,400 0,266 0,266 C 121.39285714285714,259.42857142857144 242.78571428571428,252.85714285714286 356,244 C 469.2142857142857,235.14285714285714 574.25,224 697,235 C 819.75,246 960.2142857142858,279.14285714285717 1087,288 C 1213.7857142857142,296.85714285714283 1326.892857142857,281.42857142857144 1440,266 C 1440,266 1440,400 1440,400 Z"
+                    stroke="none" stroke-width="0" fill="#37aec3ff"
+                    class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 200)">
+                </path>
+            </svg>
+
+        </div>
+        <section id="about" class="Home">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="imgs/raining-animate-1.svg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6 home-cap">
+                        <div class="d-flex justify-content-center align-items-center flex-column">
+                            <h2>Weather App</h2>
+                            <br>
+                            <p>
+                                Having an up to date information about the weather helps us to take well-read decisions.
+                                These weather apps constantly update the forecasts for a day or hour or sometimes for
+                                even a
+                                minute. These can be simply termed as the compact weather devices, as they do not only
+                                tell
+                                about the temperature of that specific region instead they can describe the accurate
+                                time of
+                                the sunrise and sunset, the time of the rainfall, humidity levels, etc.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="search" class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <div class="w-50">
+                        <input id="searchBar" type="text" placeholder="Search City...."
+                            class="form-control m-auto my-5">
+                    </div>
+                </div>
+                <div class="row gx-4">
+                    <div class="col-md-4 mb-3">
+                        <div class="card border-0 ">
+                            <div class="cardHead">
+                                <div class="row">
+                                    <p id="todayDate" class="pe-3 col-md-12"></p>
+                                </div>
+                            </div>
+                            <div class="card-body ">
+                                <div class="row ">
+                                    <div class="col-md-12">
+                                        <h5 id="country"> </h5>
+                                    </div>
+                                    <div class="col-md-8 text-white">
+                                        <h1 id="Deg">
+                                        </h1>
+                                    </div>
+                                    <div class="col-md 4">
+                                        <img id="icn1"></img>
+                                    </div>
+                                    <div id="details" class="col-md-12 text-primary my-2">
+
+                                    </div>
+                                    <div class="row">
+                                        <span class=" col-md-4">
+                                            <i class="fas fa-umbrella pr-1"></i>
+                                            <h4 id="icn2"></h4>
+                                        </span>
+                                        <span class="col-md-4">
+                                            <i class="fas fa-wind pl-3 pr-1"></i>
+                                            <h4 id="icn3"></h4>
+                                        </span>
+                                        <span class="col-md-4">
+                                            <i class="far fa-compass pl-3 pr-1"></i>
+                                            <h4 class="ms-2" id="icn4"></h4>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 ">
+                            <div class="cardHead2 d-flex justify-content-center">
+                                <p>Tomorrow</p>
+                            </div>
+                            <div class="card-body2">
+                                <div class="container">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-center pt-5">
+                                            <img id="icn_tomorrow"></img>
+                                        </div>
+                                        <div class="col-md-12 text-white d-flex justify-content-center pt-1">
+                                            <p id="max_deg_tomorrow"></p>
+                                        </div>
+                                        <div class="col-md-12  d-flex justify-content-center pt-1">
+                                            <h6 id="min_deg_tomorrow"></h6>
+                                        </div>
+                                        <div class="col-md-12 text-primary d-flex justify-content-center pt-1">
+                                            <small id="d1"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0">
+                            <div class="cardHead d-flex justify-content-center">
+                                <p>After Tomorrow</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="row col">
+                                        <div class="col-md-12 d-flex justify-content-center pt-5">
+                                            <img id="icn_after_tomorrow"></img>
+                                        </div>
+                                        <div class="col-md-12 text-white d-flex justify-content-center pt-1">
+                                            <p id="max_deg_after_tomorrow"></p>
+                                        </div>
+                                        <div class="col-md-12  d-flex justify-content-center pt-1">
+                                            <h6 id="min_deg_after_tomorrow"></h6>
+                                        </div>
+                                        <div class="col-md-12 text-primary d-flex justify-content-center pt-1">
+                                            <small id="d2"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="app" class="download-app py-3 my-5" id="mobileApp">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8">
+                        <div class="download-info text-center mt-5">
+                            <h4 class="main-color mb-4">Mobile App</h4>
+                            <p class="mb-4">
+                                This weather app is one of best free weather apps with full
+                                features:
+                                <br>
+                                Local weather
+
+                                weather map (weather map service)
+
+                                and weather widgets.
+                            </p>
+                            <div class="download-btn mt-5">
+                                <button class="btn btn-info mr-2">Download Android</button>
+                                <button class="btn btn-info">Download iOS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="download-img text-center">
+                            <img class="img-fluid" src="imgs/download.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Subscribe" class="subscribe text-center my-5 py-5" id="subscribe">
+            <div class="container">
+                <div class="subscribe-container row d-flex">
+                    <div class="subscribe-img col-md-4">
+                        <img class="img-fluid  ml-5" src="imgs/subscribe.png">
+                    </div>
+                    <div class="subscribe-info pt-5 col-md-8">
+                        <div>
+                            <h4 class="main-color">Subscribe</h4>
+                            <p>Get daily weather updates, quotes &amp; more..</p>
+                        </div>
+                        <input class="w-75" id="emailInput" type="mail" placeholder="Enter your email to subsribe.."
+                            style="padding: 5px 15px;
+                      border: 1px solid #3199ab;
+                      border-radius: 20px;">
+                        <div id="emailInputAlert" class="d-none text-danger my-3">
+                            Invalid Email Address!
+                        </div>
+                        <button class="btn btn-info d-block mx-auto my-3" id="subscribeBtn">Subscribe</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg"
+                class="transition duration-300 ease-in-out delay-150">
+                <path
+                    d="M 0,400 C 0,400 0,80 0,80 C 17.796039618389514,75.16548507700652 35.59207923677903,70.33097015401304 60,63 C 84.40792076322097,55.66902984598695 115.42772267127336,45.84160446095434 143,55 C 170.57227732872664,64.15839553904566 194.6970300781276,92.30261200216962 215,100 C 235.3029699218724,107.69738799783038 251.78415701621623,94.94794753036716 276,87 C 300.2158429837838,79.05205246963284 332.16634185700747,75.9055978763617 361,79 C 389.83365814299253,82.0944021236383 415.5504755557539,91.42966096418603 440,97 C 464.4495244442461,102.57033903581397 487.63175591997674,104.37575826689422 508,108 C 528.3682440800233,111.62424173310578 545.9225007643392,117.06730596823712 573,103 C 600.0774992356608,88.93269403176288 636.6782410226665,55.355017860157275 659,55 C 681.3217589773335,54.644982139842725 689.3645351449946,87.51262259113379 712,97 C 734.6354648550054,106.48737740886621 771.8636183973551,92.59449177530759 796,90 C 820.1363816026449,87.40550822469241 831.1809912655849,96.10941030763588 855,91 C 878.8190087344151,85.89058969236412 915.4124165403052,66.9678669941489 946,68 C 976.5875834596948,69.0321330058511 1001.1693425731946,90.01912171576852 1020,99 C 1038.8306574268054,107.98087828423148 1051.910213166916,104.95564614277706 1072,100 C 1092.089786833084,95.04435385722294 1119.1898047591412,88.15829371312327 1148,83 C 1176.8101952408588,77.84170628687673 1207.3305677965188,74.41117900472985 1234,80 C 1260.6694322034812,85.58882099527015 1283.4879240547832,100.19699026795735 1303,93 C 1322.5120759452168,85.80300973204265 1338.7177359843477,56.800859923440754 1361,51 C 1383.2822640156523,45.199140076559246 1411.6411320078262,62.59957003827962 1440,80 C 1440,80 1440,400 1440,400 Z"
+                    stroke="none" stroke-width="0" fill="#37485044"
+                    class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+                <path
+                    d="M 0,400 C 0,400 0,160 0,160 C 24.98512203365499,168.57304728168697 49.97024406730998,177.1460945633739 75,169 C 100.02975593269002,160.8539054366261 125.10414576441511,135.98866902819134 148,134 C 170.8958542355849,132.01133097180866 191.61317287502965,152.89922932386074 217,155 C 242.38682712497035,157.10077067613926 272.4431627354664,140.41441367636568 294,147 C 315.5568372645336,153.58558632363432 328.614176183105,183.44311597067653 348,180 C 367.385823816895,176.55688402932347 393.1001325321138,139.8131224409282 419,136 C 444.8998674678862,132.1868775590718 470.98529368844015,161.30439426561063 500,171 C 529.0147063115598,180.69560573438937 560.9586927141257,170.96930049662933 588,172 C 615.0413072858743,173.03069950337067 637.1799354550565,184.81840374787205 659,176 C 680.8200645449435,167.18159625212795 702.3215654656481,137.75708451188243 727,133 C 751.6784345343519,128.24291548811757 779.5338026823513,148.15325820459825 800,147 C 820.4661973176487,145.84674179540175 833.5432238049469,123.62988266972454 855,132 C 876.4567761950531,140.37011733027546 906.2933020978613,179.32721111650363 935,178 C 963.7066979021387,176.67278888349637 991.2835678036076,135.0612728642609 1015,131 C 1038.7164321963924,126.9387271357391 1058.5724266877082,160.42769742645268 1080,175 C 1101.4275733122918,189.57230257354732 1124.426725445559,185.2279374299284 1146,186 C 1167.573274554441,186.7720625700716 1187.7206715300563,192.66055285383362 1212,185 C 1236.2793284699437,177.33944714616638 1264.6905884342157,156.12985115473708 1289,158 C 1313.3094115657843,159.87014884526292 1333.516974733081,184.82004252721796 1358,189 C 1382.483025266919,193.17995747278204 1411.2415126334595,176.589978736391 1440,160 C 1440,160 1440,400 1440,400 Z"
+                    stroke="none" stroke-width="0" fill="#37485066"
+                    class="transition-all duration-300 ease-in-out delay-150 path-1"></path>
+                <path
+                    d="M 0,400 C 0,400 0,240 0,240 C 23.516665935702804,246.83184390342086 47.03333187140561,253.66368780684172 68,260 C 88.96666812859439,266.3363121931583 107.3833384500804,272.177092676054 130,261 C 152.6166615499196,249.82290732394603 179.43331432827273,221.62794148894244 207,225 C 234.56668567172727,228.37205851105756 262.8834042368286,263.3111413681764 289,265 C 315.1165957631714,266.6888586318236 339.0330687244126,235.1274930383521 361,229 C 382.9669312755874,222.8725069616479 402.98432086552106,242.17888647841522 424,251 C 445.01567913447894,259.8211135215848 467.0296478135034,258.15696104798684 496,257 C 524.9703521864966,255.84303895201316 560.8970878804655,255.19326932963745 583,255 C 605.1029121195345,254.80673067036255 613.3820006646348,255.06996163346338 638,255 C 662.6179993353652,254.93003836653662 703.5749094609955,254.52688413650904 733,249 C 762.4250905390045,243.47311586349096 780.3183614913831,232.8225018205005 800,226 C 819.6816385086169,219.1774981794995 841.151644573472,216.18310858148894 864,220 C 886.848355426528,223.81689141851106 911.075060214729,234.44506385354376 932,244 C 952.924939785271,253.55493614645624 970.5481145676122,262.036636004336 998,255 C 1025.4518854323878,247.963363995664 1062.732481514822,225.40839212911203 1088,227 C 1113.267518485178,228.59160787088797 1126.5219593731001,254.32979547921582 1149,257 C 1171.4780406268999,259.6702045207842 1203.179680992777,239.27242595402458 1230,234 C 1256.820319007223,228.72757404597542 1278.7593166557908,238.5805007046857 1299,246 C 1319.2406833442092,253.4194992953143 1337.7830523840598,258.4055712272326 1361,257 C 1384.2169476159402,255.59442877276737 1412.10847380797,247.7972143863837 1440,240 C 1440,240 1440,400 1440,400 Z"
+                    stroke="none" stroke-width="0" fill="#37485088"
+                    class="transition-all duration-300 ease-in-out delay-150 path-2"></path>
+                <path
+                    d="M 0,400 C 0,400 0,320 0,320 C 29.422362783427296,333.8945757083111 58.84472556685459,347.78915141662213 82,340 C 105.15527443314541,332.21084858337787 122.0434605160089,302.73797004182256 143,305 C 163.9565394839911,307.26202995817744 188.98143236910985,341.25896841608744 213,342 C 237.01856763089015,342.74103158391256 260.0308100075516,310.2261562938274 284,308 C 307.9691899924484,305.7738437061726 332.89532760068374,333.8364064086028 357,331 C 381.10467239931626,328.1635935913972 404.3878795897136,294.42821807176136 429,295 C 453.6121204102864,295.57178192823864 479.55315404046166,330.4507213043518 505,331 C 530.4468459595383,331.5492786956482 555.3995042484398,297.7688967108316 577,291 C 598.6004957515602,284.2311032891684 616.8488289657787,304.473691852322 644,309 C 671.1511710342213,313.526308147678 707.2051798884453,302.3363358798805 728,303 C 748.7948201115547,303.6636641201195 754.3304514804399,316.18096462815595 779,315 C 803.6695485195601,313.81903537184405 847.4730141897953,298.93980560749566 872,296 C 896.5269858102047,293.06019439250434 901.7774917603789,302.0598129418615 922,301 C 942.2225082396211,299.9401870581385 977.4170187686884,288.82094262505854 1006,292 C 1034.5829812313116,295.17905737494146 1056.5544331648666,312.6564165579043 1079,315 C 1101.4455668351334,317.3435834420957 1124.365248571845,304.553391143324 1146,304 C 1167.634751428155,303.446608856676 1187.984572547753,315.13001886879977 1214,313 C 1240.015427452247,310.86998113120023 1271.6964612371432,294.92653338147693 1301,298 C 1330.3035387628568,301.07346661852307 1357.2295825036733,323.1638476052923 1380,330 C 1402.7704174963267,336.8361523947077 1421.3852087481632,328.41807619735386 1440,320 C 1440,320 1440,400 1440,400 Z"
+                    stroke="none" stroke-width="0" fill="#374850ff"
+                    class="transition-all duration-300 ease-in-out delay-150 path-3"></path>
+            </svg>
+        </section>
+        <footer>
+            <div class="footer">
+                <p class="text-center text-white mb-0">Copyright © 2021 Designed by Menna El-adl. All rights reserved
+                </p>
+                <div class="social-media text-white text-center mt-2">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-google-plus"></i>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/Main.js"></script>
+</body>
+
+</html>
